@@ -1,0 +1,29 @@
+{
+  "jhipsterApp": {
+    "masterdataConfig": {
+      "home": {
+        "title": "Masterdata Configs",
+        "createLabel": "Create a new Masterdata Config",
+        "createOrEditLabel": "Create or edit a Masterdata Config",
+        "notFound": "No Masterdata Config found"
+      },
+      "created": "A new Masterdata Config is created with identifier {{ param }}",
+      "updated": "A Masterdata Config is updated with identifier {{ param }}",
+      "deleted": "A Masterdata Config is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Masterdata Config {{ id }}?"
+      },
+      "detail": {
+        "title": "Masterdata Config"
+      },
+      "name": "Name",
+      "path": "Path",
+      "clazz": "Clazz",
+      "collectionName": "Collection Name",
+      "environment": "Environment",
+      "contentType": "Content Type",
+      "port": "Port",
+      "url": "Url"
+    }
+  }
+}

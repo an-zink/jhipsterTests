@@ -1,0 +1,5 @@
+entity Tisches {
+	name String
+	tischPlatte String
+	tischBein String
+}

@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "haus": {
+      "home": {
+        "title": "Haus",
+        "createLabel": "Haus erstellen",
+        "createOrEditLabel": "Haus erstellen oder bearbeiten",
+        "notFound": "No Haus found"
+      },
+      "created": "Haus erstellt mit ID {{ param }}",
+      "updated": "Haus aktualisiert mit ID {{ param }}",
+      "deleted": "Haus gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Haus {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Haus"
+      },
+      "nr": "Nr",
+      "name": "Name"
+    }
+  }
+}

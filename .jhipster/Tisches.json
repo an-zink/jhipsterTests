@@ -1,0 +1,27 @@
+{
+    "name": "Tisches",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tischPlatte",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tischBein",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20210802114157",
+    "entityTableName": "tisches",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

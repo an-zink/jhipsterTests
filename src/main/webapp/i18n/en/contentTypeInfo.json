@@ -1,0 +1,28 @@
+{
+  "jhipsterApp": {
+    "contentTypeInfo": {
+      "home": {
+        "title": "Content Type Infos",
+        "createLabel": "Create a new Content Type Info",
+        "createOrEditLabel": "Create or edit a Content Type Info",
+        "notFound": "No Content Type Info found",
+        "strapi": "Show Strapi"
+      },
+      "created": "A new Content Type Info is created with identifier {{ param }}",
+      "updated": "A Content Type Info is updated with identifier {{ param }}",
+      "deleted": "A Content Type Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Content Type Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Content Type Info"
+      },
+      "contentTypeName": "Content Type Name",
+      "enviroment": "Enviroment",
+      "lastModifiedByStrapiUser": "Last Modified By Strapi User",
+      "lastModifiedDate": "Last Modified Date",
+      "numberOfEntries": "Number Of Entries",
+      "numberOfParameters": "Number Of Parameters"
+    }
+  }
+}

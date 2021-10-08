@@ -1,0 +1,31 @@
+<div>
+  <h2 id="page-heading">
+    <span jhiTranslate="jhipsterApp.strapi.home.title">Strapie Environments</span>
+  </h2>
+   <br/>   
+   <div>
+     <table class="table table-striped">
+      <thead>
+      <th>Name / Umgebung</th>
+      <th *ngFor="let environments of contentTypeEnvironment"> {{environments.enviroment}}</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let names of contentTypeDataSorted">
+          <td *ngFor="let content of names ; index as j"> 
+            <div *ngIf= "j > 0  && content.contentTypeName != null">
+              Last Modified Date: {{content.lastModifiedDate}} <br>
+              Number Of Entries: {{content.numberOfEntries}} <br>
+              Number Of Parameters:   {{content.numberOfParameters}}<br>
+              Name: {{content.contentTypeName}} <br>
+              Umgebung:   {{content.enviroment}}<br>
+            </div>
+            <div *ngIf="j == 0 ">
+              <b>{{content.contentTypeName}}</b>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+     </table>
+   </div>
+  </div>
+

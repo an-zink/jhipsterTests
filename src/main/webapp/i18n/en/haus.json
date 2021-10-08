@@ -1,0 +1,23 @@
+{
+  "jhipsterApp": {
+    "haus": {
+      "home": {
+        "title": "Haus",
+        "createLabel": "Create a new Haus",
+        "createOrEditLabel": "Create or edit a Haus",
+        "notFound": "No Haus found"
+      },
+      "created": "A new Haus is created with identifier {{ param }}",
+      "updated": "A Haus is updated with identifier {{ param }}",
+      "deleted": "A Haus is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Haus {{ id }}?"
+      },
+      "detail": {
+        "title": "Haus"
+      },
+      "nr": "Nr",
+      "name": "Name"
+    }
+  }
+}

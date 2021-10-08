@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="masterdataConfig">
+            <h2><span jhiTranslate="jhipsterApp.masterdataConfig.detail.title">Masterdata Config</span> {{masterdataConfig.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.name">Name</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.path">Path</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.path}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.clazz">Clazz</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.clazz}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.collectionName">Collection Name</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.collectionName}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.environment">Environment</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.environment}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.contentType">Content Type</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.contentType}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.port">Port</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.port}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.masterdataConfig.url">Url</span></dt>
+                <dd>
+                    <span>{{masterdataConfig.url}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/masterdata-config', masterdataConfig.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

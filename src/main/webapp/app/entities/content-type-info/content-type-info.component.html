@@ -1,0 +1,67 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="jhipsterApp.contentTypeInfo.home.title">Content Type Infos</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-content-type-info" [routerLink]="['/content-type-info/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="jhipsterApp.contentTypeInfo.home.createLabel">
+            Create new Content Type Info
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="alert alert-warning" *ngIf="contentTypeInfos?.length === 0">
+        <span jhiTranslate="jhipsterApp.contentTypeInfo.home.notFound">No contentTypeInfos found</span>
+    </div>
+    <div class="table-responsive" *ngIf="contentTypeInfos?.length > 0">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="jhipsterApp.contentTypeInfo.contentTypeName">Content Type Name</span></th>
+            <th><span jhiTranslate="jhipsterApp.contentTypeInfo.enviroment">Enviroment</span></th>
+            <th><span jhiTranslate="jhipsterApp.contentTypeInfo.lastModifiedDate">Last Modified Date</span></th>
+            <th><span jhiTranslate="jhipsterApp.contentTypeInfo.numberOfEntries">Number Of Entries</span></th>
+            <th><span jhiTranslate="jhipsterApp.contentTypeInfo.numberOfParameters">Number Of Parameters</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let contentTypeInfo of contentTypeInfos ;trackBy: trackId">
+                <td><a [routerLink]="['/content-type-info', contentTypeInfo.id, 'view' ]">{{contentTypeInfo.id}}</a></td>
+                <td>{{contentTypeInfo.contentTypeName}}</td>
+                <td>{{contentTypeInfo.enviroment}}</td>
+                <td>{{contentTypeInfo.lastModifiedDate}}</td>
+                <td>{{contentTypeInfo.numberOfEntries}}</td>
+                <td>{{contentTypeInfo.numberOfParameters}}</td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/content-type-info', contentTypeInfo.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/content-type-info', contentTypeInfo.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'content-type-info', { outlets: { popup: contentTypeInfo.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br/>
+     
+</div>

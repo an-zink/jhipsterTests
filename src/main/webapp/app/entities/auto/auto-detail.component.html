@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="auto">
+            <h2><span jhiTranslate="jhipsterApp.auto.detail.title">Auto</span> {{auto.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterApp.auto.name">Name</span></dt>
+                <dd>
+                    <span>{{auto.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.auto.number">Number</span></dt>
+                <dd>
+                    <span>{{auto.number}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.auto.modell">Modell</span></dt>
+                <dd>
+                    <span>{{auto.modell}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/auto', auto.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

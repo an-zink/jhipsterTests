@@ -1,0 +1,10 @@
+entity Auto{
+	name String
+	number Integer
+	modell String
+	
+}
+entity Haus {
+	nr String
+	name String
+}

@@ -1,0 +1,4 @@
+    <th><span jhiTranslate="global.field.id">ID</span></th>
+     <td><a [routerLink]="['/content-type-info', contentTypeInfo.id, 'view' ]">{{contentTypeInfo.id}}</a></td>
+     
+     fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0,5%" fxLayoutAlign="center"

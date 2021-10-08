@@ -1,0 +1,22 @@
+{
+  "jhipsterApp": {
+    "parametersOfContentType": {
+      "home": {
+        "title": "Parameters Of Content Types",
+        "createLabel": "Parameters Of Content Type erstellen",
+        "createOrEditLabel": "Parameters Of Content Type erstellen oder bearbeiten",
+        "notFound": "No Parameters Of Content Type found"
+      },
+      "created": "Parameters Of Content Type erstellt mit ID {{ param }}",
+      "updated": "Parameters Of Content Type aktualisiert mit ID {{ param }}",
+      "deleted": "Parameters Of Content Type gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Parameters Of Content Type {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Parameters Of Content Type"
+      },
+      "contentTypeInfo": "Content Type Info"
+    }
+  }
+}

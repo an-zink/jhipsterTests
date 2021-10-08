@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "auto": {
+      "home": {
+        "title": "Autos",
+        "createLabel": "Auto erstellen",
+        "createOrEditLabel": "Auto erstellen oder bearbeiten",
+        "notFound": "No Auto found"
+      },
+      "created": "Auto erstellt mit ID {{ param }}",
+      "updated": "Auto aktualisiert mit ID {{ param }}",
+      "deleted": "Auto gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Auto {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Auto"
+      },
+      "name": "Name",
+      "number": "Number",
+      "modell": "Modell"
+    }
+  }
+}

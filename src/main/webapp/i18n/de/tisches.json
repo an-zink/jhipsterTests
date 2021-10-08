@@ -1,0 +1,24 @@
+{
+  "jhipsterApp": {
+    "tisches": {
+      "home": {
+        "title": "Tisches",
+        "createLabel": "Tisches erstellen",
+        "createOrEditLabel": "Tisches erstellen oder bearbeiten",
+        "notFound": "No Tisches found"
+      },
+      "created": "Tisches erstellt mit ID {{ param }}",
+      "updated": "Tisches aktualisiert mit ID {{ param }}",
+      "deleted": "Tisches gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Tisches {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Tisches"
+      },
+      "name": "Name",
+      "tischPlatte": "Tisch Platte",
+      "tischBein": "Tisch Bein"
+    }
+  }
+}

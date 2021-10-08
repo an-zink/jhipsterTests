@@ -1,0 +1,10 @@
+entity MasterdataConfig{
+	name String unique
+	path String
+	clazz String
+	collectionName String
+	environment String
+	contentType String
+	port String
+	url String
+}

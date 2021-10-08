@@ -1,0 +1,86 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-content-type-info-heading" jhiTranslate="jhipsterApp.contentTypeInfo.home.createOrEditLabel">Create or edit a Content Type Info</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!editForm.get('id').value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterApp.contentTypeInfo.contentTypeName" for="field_contentTypeName">Content Type Name</label>
+                    <input type="text" class="form-control" name="contentTypeName" id="field_contentTypeName"
+                           formControlName="contentTypeName"/>
+                    <div *ngIf="editForm.get('contentTypeName').invalid && (editForm.get('contentTypeName').dirty || editForm.get('contentTypeName').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('contentTypeName').errors.minlength" jhiTranslate="entity.validation.minlength" [translateValues]="{ min: 2 }">
+                        This field is required to be at least 2 characters.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterApp.contentTypeInfo.enviroment" for="field_enviroment">Enviroment</label>
+                    <input type="text" class="form-control" name="enviroment" id="field_enviroment"
+                           formControlName="enviroment"/>
+                    <div *ngIf="editForm.get('enviroment').invalid && (editForm.get('enviroment').dirty || editForm.get('enviroment').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('enviroment').errors.minlength" jhiTranslate="entity.validation.minlength" [translateValues]="{ min: 3 }">
+                        This field is required to be at least 3 characters.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('enviroment').errors.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 3 }">
+                        This field cannot be longer than 3 characters.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterApp.contentTypeInfo.lastModifiedByStrapiUser" for="field_lastModifiedByStrapiUser">Last Modified By Strapi User</label>
+                    <input type="text" class="form-control" name="lastModifiedByStrapiUser" id="field_lastModifiedByStrapiUser"
+                           formControlName="lastModifiedByStrapiUser"/>
+                    <div *ngIf="editForm.get('lastModifiedByStrapiUser').invalid && (editForm.get('lastModifiedByStrapiUser').dirty || editForm.get('lastModifiedByStrapiUser').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lastModifiedByStrapiUser').errors.minlength" jhiTranslate="entity.validation.minlength" [translateValues]="{ min: 2 }">
+                        This field is required to be at least 2 characters.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterApp.contentTypeInfo.lastModifiedDate" for="field_lastModifiedDate">Last Modified Date</label>
+                    <input type="text" class="form-control" name="lastModifiedDate" id="field_lastModifiedDate"
+                           formControlName="lastModifiedDate"/>
+                    <div *ngIf="editForm.get('lastModifiedDate').invalid && (editForm.get('lastModifiedDate').dirty || editForm.get('lastModifiedDate').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lastModifiedDate').errors.minlength" jhiTranslate="entity.validation.minlength" [translateValues]="{ min: 10 }">
+                        This field is required to be at least 10 characters.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lastModifiedDate').errors.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 10 }">
+                        This field cannot be longer than 10 characters.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterApp.contentTypeInfo.numberOfEntries" for="field_numberOfEntries">Number Of Entries</label>
+                    <input type="number" class="form-control" name="numberOfEntries" id="field_numberOfEntries"
+                           formControlName="numberOfEntries"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterApp.contentTypeInfo.numberOfParameters" for="field_numberOfParameters">Number Of Parameters</label>
+                    <input type="number" class="form-control" name="numberOfParameters" id="field_numberOfParameters"
+                           formControlName="numberOfParameters"/>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

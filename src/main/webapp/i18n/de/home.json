@@ -6,6 +6,7 @@
       "message": "Sie sind als Benutzer \"{{username}}\" angemeldet."
     },
     "question": "Wenn Sie Fragen zu JHipster haben:",
+    "strapi": "Strapi",
     "link": {
       "homepage": "JHipster Hauptseite",
       "stackoverflow": "JHipster auf Stack Overflow",

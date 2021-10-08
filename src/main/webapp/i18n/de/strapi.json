@@ -1,0 +1,13 @@
+{
+  "jhipsterApp": {
+    "strapi": {
+      "home": {
+        "title": "Verschiedene Strapi-Umgebungen"
+      },
+      "environments": {
+        "dev": "DEV",
+        "int": "INT"
+      }
+    }
+  }
+}

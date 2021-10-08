@@ -1,0 +1,10 @@
+entity ContentTypeInfo{
+	contentTypeName String  minlength(2) 
+	enviroment String  minlength(3) maxlength(3)  unique 
+	lastModifiedDate String minlength(10) maxlength(10) 
+	numberOfEntries Integer 
+	numberOfParameters Integer 
+	
+}
+
+

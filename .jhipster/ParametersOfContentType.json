@@ -1,0 +1,23 @@
+{
+    "name": "ParametersOfContentType",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "contentTypeInfo",
+            "otherEntityRelationshipName": "component",
+            "relationshipName": "contentTypeInfo",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20210315133127",
+    "entityTableName": "parameters_of_content_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
